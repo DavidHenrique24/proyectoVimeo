@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "vite": "^6.0.3"
+  },
+  "devDependencies": {
+    "sass": "^1.83.0"
+  },
+  "name": "proyectovimeo",
+  "version": "1.0.0",
+  "main": "vite.config.js",
+ "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+},
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
