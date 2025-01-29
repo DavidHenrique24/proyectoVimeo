@@ -40,5 +40,30 @@ body {
   color: black;
 }
 
+.whiteText{
+  font-size: 50px;
+  line-height: 1;
+  letter-spacing: -.15rem;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+.bg-hero {
+  background: url('https://i.vimeocdn.com/custom_asset/8b5bc41926561c9ac287a727ade1f786?w=1920&q=80') no-repeat center center;
+  background-size: cover;
+  width: 100%; 
+  height: 300px; 
+  display: flex;
+  align-items: center; 
+}
+.whiteText {
+  color: white; 
+  
+}
+
+.separacion{
+  padding: 100px;
+}
 
 
