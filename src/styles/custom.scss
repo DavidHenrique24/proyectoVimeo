@@ -139,3 +139,43 @@
 }
 
 
+footer ul {
+  list-style: none; 
+  padding: 0;
+  
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: white; 
+  
+}
+
+footer ul li a:hover {
+  color: #ccc; 
+}
+footer ul {
+  list-style: none; 
+  padding: 0;
+}
+
+footer ul li {
+  font-size: 16px; 
+  font-weight: 500;
+  color: var(--colors-footer-sub-content);
+}
+
+footer ul li a {
+  text-decoration: none; 
+  color: white; 
+  display: block; 
+  padding: 2px 0; 
+}
+
+footer ul li a:hover {
+  color:rgba(23,213,255) ; 
+}
+
+.negroColor{
+  background-color: rgba(10,13,18,255)
+}
