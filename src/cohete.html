@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cohete</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            background-color: rgb(24, 13, 44);
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            border-radius: 10px;
+        }
+
+        .transformaciones img {
+            width: 80px; /* Tamaño de la imagen */
+            height: auto;
+            animation: moveCurve 3s ease-in-out infinite;
+            
+        }
+
+
+        @keyframes moveCurve {
+            0% {
+                transform: translate(0px, 0);
+            }
+            25% {
+                transform: translate(100px, -50px); /* Mueve hacia la derecha y hacia arriba */
+                rotate: 45deg;        /* Equivale a transform: rotateZ(45deg);  */
+            }
+            50% {
+                transform: translate(200px, 0); /* Mueve más a la derecha */
+                rotate: 80deg;        /* Equivale a transform: rotateZ(45deg);  */
+            }
+            75% {
+                transform: translate(100px, 100px); /* Mueve hacia la derecha y hacia abajo */
+                rotate: 180deg;        /* Equivale a transform: rotateZ(45deg);  */
+            }
+            100% {
+                transform: translate(0px, 0); /* Vuelve a la posición original */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="c1" class="transformaciones">
+            <img src="https://images.emojiterra.com/google/android-kitkat/64px/1f680.png" alt="Cohete">
+        </div>
+    </div>
+</body>
+</html>
