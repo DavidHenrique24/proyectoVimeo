@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Vimeo DH</title>
     <link rel="stylesheet" href="./styles/custom.scss">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/147cf78807.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
 <body>
@@ -133,33 +135,21 @@
                     <li class="nav-item">
                         <a class="nav-link black" href="#" style="width: 150px;">Iniciar Sesión</a>
                     </li>
+
                     <div class="d-flex justify-content-center w-100">
-                        <div class=" d-flex justify-content-center mx-2">
-                            <div class="bg-gris p-3 d-flex justify-content-center align-items-center rounded-3">
-                                <span>Ver los planes</span>
-                                <div class=" btn btn-primary btn-lg mx-2 unirse d-flex justify-content-between align-items-center">
-                                    <!-- Contenedor de flecha con fondo oscuro azul -->
-                                    <div class="flecha-contenedor">
-                                        <!-- Flecha original -->
-                                        <svg class="arrow original" width="15px" height="15px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                            <g fill="inherit">
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M13.085 10.8333L9.42356 14.5731C9.04929 14.9553 9.04929 15.5667 9.42356 15.949C9.8092 16.3429 10.4433 16.3429 10.8289 15.949L15.965 10.703C16.345 10.3148 16.345 9.68553 15.965 9.29737L10.8289 4.05105C10.4433 3.65715 9.80921 3.65713 9.42356 4.05101C9.04928 4.43328 9.04926 5.04462 9.42352 5.42691L13.0847 9.16666L4.58333 9.16666C4.1231 9.16666 3.75 9.53976 3.75 10C3.75 10.4602 4.1231 10.8333 4.58333 10.8333L13.085 10.8333Z">
-                                                </path>
-                                            </g>
-                                        </svg>
-                                        <!-- Flecha reemplazada -->
-                                        <svg class="arrow replaced" width="15px" height="15px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                            <g fill="inherit">
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M13.085 10.8333L9.42356 14.5731C9.04929 14.9553 9.04929 15.5667 9.42356 15.949C9.8092 16.3429 10.4433 16.3429 10.8289 15.949L15.965 10.703C16.345 10.3148 16.345 9.68553 15.965 9.29737L10.8289 4.05105C10.4433 3.65715 9.80921 3.65713 9.42356 4.05101C9.04928 4.43328 9.04926 5.04462 9.42352 5.42691L13.0847 9.16666L4.58333 9.16666C4.1231 9.16666 3.75 9.53976 3.75 10C3.75 10.4602 4.1231 10.8333 4.58333 10.8333L13.085 10.8333Z">
-                                                </path>
-                                            </g>
-                                        </svg>
+                        <button class="btnPlanesNuevo text-center align-items-center ms-4">
+                            <div class="contenedorNuevo">
+                                <div class="azulClaroNuevo"></div>
+                                <div class="verPlanesNuevo fw-bold">
+                                    Ver más opciones
+                                    <div class="flechaNuevo">
+                                        <span id="span1" class="material-symbols-outlined">arrow_forward</span>
+                                        <span id="span2" class="material-symbols-outlined">arrow_forward</span>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </button>
+                        
                 </ul>
             </div>
         </nav>
@@ -174,60 +164,34 @@
         <h5 class="text">Conozca la plataforma de video completa que puede transformar su manera de hacer negocios.</h5>
         <br>
         <!-- Animacion de botones -->
-        <div class="d-flex justify-content-center w-100">
-            <div class=" d-flex justify-content-center w-auto mx-2">
-                <div class="bg-gris p-3 d-flex justify-content-center align-items-center rounded-3">
-                    <span>Ver los planes</span>
-                    <div class=" btn btn-primary btn-lg mx-2 unirse d-flex justify-content-between align-items-center">
-                        <!-- Contenedor de flecha con fondo oscuro azul -->
-                        <div class="flecha-contenedor">
-                            <!-- Flecha original -->
-                            <svg class="arrow original" width="15px" height="15px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                <g fill="inherit">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M13.085 10.8333L9.42356 14.5731C9.04929 14.9553 9.04929 15.5667 9.42356 15.949C9.8092 16.3429 10.4433 16.3429 10.8289 15.949L15.965 10.703C16.345 10.3148 16.345 9.68553 15.965 9.29737L10.8289 4.05105C10.4433 3.65715 9.80921 3.65713 9.42356 4.05101C9.04928 4.43328 9.04926 5.04462 9.42352 5.42691L13.0847 9.16666L4.58333 9.16666C4.1231 9.16666 3.75 9.53976 3.75 10C3.75 10.4602 4.1231 10.8333 4.58333 10.8333L13.085 10.8333Z">
-                                    </path>
-                                </g>
-                            </svg>
-                            <!-- Flecha reemplazada -->
-                            <svg class="arrow replaced" width="15px" height="15px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                <g fill="inherit">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M13.085 10.8333L9.42356 14.5731C9.04929 14.9553 9.04929 15.5667 9.42356 15.949C9.8092 16.3429 10.4433 16.3429 10.8289 15.949L15.965 10.703C16.345 10.3148 16.345 9.68553 15.965 9.29737L10.8289 4.05105C10.4433 3.65715 9.80921 3.65713 9.42356 4.05101C9.04928 4.43328 9.04926 5.04462 9.42352 5.42691L13.0847 9.16666L4.58333 9.16666C4.1231 9.16666 3.75 9.53976 3.75 10C3.75 10.4602 4.1231 10.8333 4.58333 10.8333L13.085 10.8333Z">
-                                    </path>
-                                </g>
-                            </svg>
+        <div class="d-flex justify-content-center w-100 space-between">
+         
+            <button class="btnPlanes text-center align-items-center "> 
+                <div class="contenedor">
+                    <div class="azulClaro"></div>
+                    <div class="verPlanes fw-bold">
+                        Ver los planes
+                        <div class="flecha">
+                            <span id="span1" class="material-symbols-outlined">arrow_forward</span>
+                            <span id="span2" class="material-symbols-outlined">arrow_forward</span>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="btn-gris d-flex justify-content-center w-auto mx-2">
-                <div class="bg-secondary p-3 d-flex justify-content-center align-items-center rounded-3">
-                    <span>Unirse gratis</span>
-                    <div class="btn btn-primary btn-lg mx-2 unirse d-flex justify-content-between align-items-center">
-                        <!-- Contenedor de flecha con fondo oscuro azul -->
-                        <div class="flecha-contenedor">
-                            <!-- Flecha original -->
-                            <svg class="arrow original" width="15px" height="15px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                <g fill="inherit">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M13.085 10.8333L9.42356 14.5731C9.04929 14.9553 9.04929 15.5667 9.42356 15.949C9.8092 16.3429 10.4433 16.3429 10.8289 15.949L15.965 10.703C16.345 10.3148 16.345 9.68553 15.965 9.29737L10.8289 4.05105C10.4433 3.65715 9.80921 3.65713 9.42356 4.05101C9.04928 4.43328 9.04926 5.04462 9.42352 5.42691L13.0847 9.16666L4.58333 9.16666C4.1231 9.16666 3.75 9.53976 3.75 10C3.75 10.4602 4.1231 10.8333 4.58333 10.8333L13.085 10.8333Z">
-                                    </path>
-                                </g>
-                            </svg>
-                            <!-- Flecha reemplazada -->
-                            <svg class="arrow replaced" width="15px" height="15px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                <g fill="inherit">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M13.085 10.8333L9.42356 14.5731C9.04929 14.9553 9.04929 15.5667 9.42356 15.949C9.8092 16.3429 10.4433 16.3429 10.8289 15.949L15.965 10.703C16.345 10.3148 16.345 9.68553 15.965 9.29737L10.8289 4.05105C10.4433 3.65715 9.80921 3.65713 9.42356 4.05101C9.04928 4.43328 9.04926 5.04462 9.42352 5.42691L13.0847 9.16666L4.58333 9.16666C4.1231 9.16666 3.75 9.53976 3.75 10C3.75 10.4602 4.1231 10.8333 4.58333 10.8333L13.085 10.8333Z">
-                                    </path>
-                                </g>
-                            </svg>
+            </button>
+            <button class="btnplanes text-center align-items-center ms-2">
+                <div class="over">
+                    <div class="azul"></div>
+                    <div class="unirse fw-bold">
+                        Unirse Gratis
+                        <div class="conflecha">
+                            <span id="span1" class="material-symbols-outlined">arrow_forward</span>
+                            <span id="span2" class="material-symbols-outlined">arrow_forward</span>
                         </div>
                     </div>
                 </div>
-            </div>
+            </button>
         </div>
+        
         
         
         
@@ -254,17 +218,18 @@
                     resultados.
                 </h5>
                 <br>
-                <div class="d-flex justify-content-start">
-                    <div class="btn btn-primary btn-lg">Solicitar una demostracion <svg width="20px" height="20px"
-                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
-                            class="shrink-0 !h-6 !w-6 mx-0 fill-btn-content">
-                            <g fill="inherit">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M13.085 10.8333L9.42356 14.5731C9.04929 14.9553 9.04929 15.5667 9.42356 15.949C9.8092 16.3429 10.4433 16.3429 10.8289 15.949L15.965 10.703C16.345 10.3148 16.345 9.68553 15.965 9.29737L10.8289 4.05105C10.4433 3.65715 9.80921 3.65713 9.42356 4.05101C9.04928 4.43328 9.04926 5.04462 9.42352 5.42691L13.0847 9.16666L4.58333 9.16666C4.1231 9.16666 3.75 9.53976 3.75 10C3.75 10.4602 4.1231 10.8333 4.58333 10.8333L13.085 10.8333Z">
-                                </path>
-                            </g>
-                        </svg> </div>
-                </div>
+                <button class="btnPlanesLargo text-center align-items-center ms-4">
+                    <div class="contenedorLargo">
+                        <div class="azulClaroLargo"></div>
+                        <div class="verPlanesLargo fw-bold">
+                            Solicitar una demostracion
+                            <div class="flechaLargo">
+                                <span id="span1" class="material-symbols-outlined">arrow_forward</span>
+                                <span id="span2" class="material-symbols-outlined">arrow_forward</span>
+                            </div>
+                        </div>
+                    </div>
+                </button>
             </div>
         </div>
 
@@ -373,18 +338,18 @@
                                 </p>
                             </div>
                             <div class="d-flex justify-content-start mt-auto mb-2">
-                                <a class="btn btn-primary" href="https://vimeo.com/es/features/online-video-hosting"
-                                    style="width: 70px;">
-                                    <svg width="20px" height="20px" viewBox="0 0 20 20"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        class="shrink-0 !h-6 !w-6 mx-0 fill-btn-content">
-                                        <g fill="inherit">
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                d="M13.085 10.8333L9.42356 14.5731C9.04929 14.9553 9.04929 15.5667 9.42356 15.949C9.8092 16.3429 10.4433 16.3429 10.8289 15.949L15.965 10.703C16.345 10.3148 16.345 9.68553 15.965 9.29737L10.8289 4.05105C10.4433 3.65715 9.80921 3.65713 9.42356 4.05101C9.04928 4.43328 9.04926 5.04462 9.42352 5.42691L13.0847 9.16666L4.58333 9.16666C4.1231 9.16666 3.75 9.53976 3.75 10C3.75 10.4602 4.1231 10.8333 4.58333 10.8333L13.085 10.8333Z">
-                                            </path>
-                                        </g>
-                                    </svg>
-                                </a>
+                                <div class="d-flex justify-content-center w-100 space-between">
+                                    <!-- Solo flecha con animación -->
+                                    <button class="flechaButton">
+                                        <div class="flechaAnimada">
+                                            <span id="span1" class="material-symbols-outlined">arrow_forward</span>
+                                            <span id="span2" class="material-symbols-outlined">arrow_forward</span>
+                                        </div>
+                                    </button>
+                                </div>
+                                
+                                
+
                             </div>
                         </div>
                     </div>
