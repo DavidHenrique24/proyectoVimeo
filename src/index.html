@@ -13,8 +13,7 @@
     <div class="separacion"></div>
     <header class="container-fluid mt-2" style="max-width: 74%;">
         <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid"
-                style="max-width: 100%; display: flex; justify-content: space-between; align-items: center;">
+            <div class="container-fluid" style="max-width: 100%; display: flex; justify-content: space-between; align-items: center;">
                 <!-- Elementos izquierda -->
                 <ul class="navbar-nav d-flex justify-content-start align-items-center">
                     <li class="nav-item">
@@ -22,43 +21,102 @@
                             <img src="./styles/img/logo.png" alt="" width="90px" style="margin-top: -5px;">
                         </a>
                     </li>
-                    
+    
                     <!-- Dropdown Producto -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle me-2 black" href="#" id="productoDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Producto
+                            <i class="fas fa-chevron-down ms-2"></i> <!-- Flecha hacia abajo -->
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="productoDropdown">
-                            <li><a class="dropdown-item" href="#">Opción 1</a></li>
-                            <li><a class="dropdown-item" href="#">Opción 2</a></li>
-                            <li><a class="dropdown-item" href="#">Opción 3</a></li>
+                            <div id="menu3" class="container-fluid text-center d-flex">
+                                <div class="row align-items-start">
+                                    <div class="col">
+                                        <a class="enlace-drop" href="#">
+                                            <span class="title">Alojamiento y reproductor</span>
+                                        </a>
+                                        <div class="d-flex text-center align-items-center">
+                                            <i class="fa-solid fa-play p-2"></i>
+                                            <p class="text-center align-items-center mt-3">Reproductor de video</p>
+                                        </div>
+                                        <div class="d-flex text-center align-items-center">
+                                            <i class="fa-solid fa-cloud-arrow-up p-2"></i>
+                                            <p class="text-center align-items-center mt-3">Alojamiento de videos</p>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <span>Creación y Edición</span>
+                                        <div class="d-flex text-center align-items-center">
+                                            <i class="fa-solid fa-scissors p-2"></i>
+                                            <p class="text-center align-items-center mt-3">Edición de video</p>
+                                        </div>
+                                        <div class="d-flex text-center align-items-center">
+                                            <i class="fa-solid fa-microphone p-2"></i>
+                                            <p class="text-center align-items-center mt-3">Narración en videos</p>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <span>Monetización de videos</span>
+                                        <div class="d-flex text-center align-items-center">
+                                            <i class="fa-solid fa-dollar-sign p-2"></i>
+                                            <p class="text-center align-items-center mt-3">Opciones de monetización</p>
+                                        </div>
+                                        <div class="d-flex text-center align-items-center">
+                                            <i class="fa-solid fa-chart-line p-2"></i>
+                                            <p class="text-center align-items-center mt-3">Análisis de ingresos</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </ul>
                     </li>
-                    
+    
                     <!-- Dropdown Soluciones -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle me-2 black" href="#" id="solucionesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Soluciones
+                            <i class="fas fa-chevron-down ms-2"></i> <!-- Flecha hacia abajo -->
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="solucionesDropdown">
-                            <li><a class="dropdown-item" href="#">Opción 1</a></li>
-                            <li><a class="dropdown-item" href="#">Opción 2</a></li>
-                            <li><a class="dropdown-item" href="#">Opción 3</a></li>
+                            <div class="container-fluid text-center d-flex">
+                                <div class="row align-items-start">
+                                    <div class="col">
+                                        <span>Opción 1</span>
+                                    </div>
+                                    <div class="col">
+                                        <span>Opción 2</span>
+                                    </div>
+                                    <div class="col">
+                                        <img src="your-image.jpg" alt="Imagen" class="img-fluid" style="width: 100px; height: auto;">
+                                    </div>
+                                </div>
+                            </div>
                         </ul>
                     </li>
-                    
+    
                     <!-- Dropdown Conocer -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle me-2 black" href="#" id="conocerDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Conocer
+                            <i class="fas fa-chevron-down ms-2"></i> <!-- Flecha hacia abajo -->
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="conocerDropdown">
-                            <li><a class="dropdown-item" href="#">Opción 1</a></li>
-                            <li><a class="dropdown-item" href="#">Opción 2</a></li>
-                            <li><a class="dropdown-item" href="#">Opción 3</a></li>
+                            <div class="container-fluid text-center d-flex">
+                                <div class="row align-items-start">
+                                    <div class="col">
+                                        <span>Opción 1</span>
+                                    </div>
+                                    <div class="col">
+                                        <span>Opción 2</span>
+                                    </div>
+                                    <div class="col">
+                                        <img src="your-image.jpg" alt="Imagen" class="img-fluid" style="width: 100px; height: auto;">
+                                    </div>
+                                </div>
+                            </div>
                         </ul>
                     </li>
-                    
+    
                     <li class="nav-item">
                         <a class="nav-link me-2 black" href="#">Precio</a>
                     </li>
@@ -70,23 +128,42 @@
                 <!-- Elementos derecha -->
                 <ul class="navbar-nav d-flex justify-content-end align-items-center">
                     <li class="nav-item">
-                        <a class="nav-link me-2 black" href="#">Comunicarse con Ventas</a>
+                        <a class="nav-link  black" href="# " style="width: 250px;" >Comunicarse con Ventas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link me-2 black" href="#">Iniciar Sesión</a>
+                        <a class="nav-link black" href="#" style="width: 150px;">Iniciar Sesión</a>
                     </li>
-                    <div class="btn btn-secondary d-flex align-items-center me-5 p-3 btn-lg me-2 black">
-                        <span class="d-flex align-items-center">Unirse</span>
-                        <span class="icon-box ms-2 d-flex justify-content-center align-items-center p-2"
-                            style="width: 40px; height: 40px;">
-                            <i class="fas fa-chevron-right"></i>
-                        </span>
-                    </div>
+                    <div class="d-flex justify-content-center w-100">
+                        <div class=" d-flex justify-content-center mx-2">
+                            <div class="bg-gris p-3 d-flex justify-content-center align-items-center rounded-3">
+                                <span>Ver los planes</span>
+                                <div class=" btn btn-primary btn-lg mx-2 unirse d-flex justify-content-between align-items-center">
+                                    <!-- Contenedor de flecha con fondo oscuro azul -->
+                                    <div class="flecha-contenedor">
+                                        <!-- Flecha original -->
+                                        <svg class="arrow original" width="15px" height="15px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                            <g fill="inherit">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M13.085 10.8333L9.42356 14.5731C9.04929 14.9553 9.04929 15.5667 9.42356 15.949C9.8092 16.3429 10.4433 16.3429 10.8289 15.949L15.965 10.703C16.345 10.3148 16.345 9.68553 15.965 9.29737L10.8289 4.05105C10.4433 3.65715 9.80921 3.65713 9.42356 4.05101C9.04928 4.43328 9.04926 5.04462 9.42352 5.42691L13.0847 9.16666L4.58333 9.16666C4.1231 9.16666 3.75 9.53976 3.75 10C3.75 10.4602 4.1231 10.8333 4.58333 10.8333L13.085 10.8333Z">
+                                                </path>
+                                            </g>
+                                        </svg>
+                                        <!-- Flecha reemplazada -->
+                                        <svg class="arrow replaced" width="15px" height="15px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                            <g fill="inherit">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M13.085 10.8333L9.42356 14.5731C9.04929 14.9553 9.04929 15.5667 9.42356 15.949C9.8092 16.3429 10.4433 16.3429 10.8289 15.949L15.965 10.703C16.345 10.3148 16.345 9.68553 15.965 9.29737L10.8289 4.05105C10.4433 3.65715 9.80921 3.65713 9.42356 4.05101C9.04928 4.43328 9.04926 5.04462 9.42352 5.42691L13.0847 9.16666L4.58333 9.16666C4.1231 9.16666 3.75 9.53976 3.75 10C3.75 10.4602 4.1231 10.8333 4.58333 10.8333L13.085 10.8333Z">
+                                                </path>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                 </ul>
             </div>
         </nav>
     </header>
-    
     
 
     <!-- Cuerpo -->
@@ -96,10 +173,64 @@
         <br>
         <h5 class="text">Conozca la plataforma de video completa que puede transformar su manera de hacer negocios.</h5>
         <br>
+        <!-- Animacion de botones -->
         <div class="d-flex justify-content-center w-100">
-            <div class="btn btn-primary btn-lg mx-2">Ver los planes</div>
-            <div class="btn btn-secondary btn-lg mx-2">Unirse gratis</div>
+            <div class=" d-flex justify-content-center w-auto mx-2">
+                <div class="bg-gris p-3 d-flex justify-content-center align-items-center rounded-3">
+                    <span>Ver los planes</span>
+                    <div class=" btn btn-primary btn-lg mx-2 unirse d-flex justify-content-between align-items-center">
+                        <!-- Contenedor de flecha con fondo oscuro azul -->
+                        <div class="flecha-contenedor">
+                            <!-- Flecha original -->
+                            <svg class="arrow original" width="15px" height="15px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <g fill="inherit">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M13.085 10.8333L9.42356 14.5731C9.04929 14.9553 9.04929 15.5667 9.42356 15.949C9.8092 16.3429 10.4433 16.3429 10.8289 15.949L15.965 10.703C16.345 10.3148 16.345 9.68553 15.965 9.29737L10.8289 4.05105C10.4433 3.65715 9.80921 3.65713 9.42356 4.05101C9.04928 4.43328 9.04926 5.04462 9.42352 5.42691L13.0847 9.16666L4.58333 9.16666C4.1231 9.16666 3.75 9.53976 3.75 10C3.75 10.4602 4.1231 10.8333 4.58333 10.8333L13.085 10.8333Z">
+                                    </path>
+                                </g>
+                            </svg>
+                            <!-- Flecha reemplazada -->
+                            <svg class="arrow replaced" width="15px" height="15px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <g fill="inherit">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M13.085 10.8333L9.42356 14.5731C9.04929 14.9553 9.04929 15.5667 9.42356 15.949C9.8092 16.3429 10.4433 16.3429 10.8289 15.949L15.965 10.703C16.345 10.3148 16.345 9.68553 15.965 9.29737L10.8289 4.05105C10.4433 3.65715 9.80921 3.65713 9.42356 4.05101C9.04928 4.43328 9.04926 5.04462 9.42352 5.42691L13.0847 9.16666L4.58333 9.16666C4.1231 9.16666 3.75 9.53976 3.75 10C3.75 10.4602 4.1231 10.8333 4.58333 10.8333L13.085 10.8333Z">
+                                    </path>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-gris d-flex justify-content-center w-auto mx-2">
+                <div class="bg-secondary p-3 d-flex justify-content-center align-items-center rounded-3">
+                    <span>Unirse gratis</span>
+                    <div class="btn btn-primary btn-lg mx-2 unirse d-flex justify-content-between align-items-center">
+                        <!-- Contenedor de flecha con fondo oscuro azul -->
+                        <div class="flecha-contenedor">
+                            <!-- Flecha original -->
+                            <svg class="arrow original" width="15px" height="15px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <g fill="inherit">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M13.085 10.8333L9.42356 14.5731C9.04929 14.9553 9.04929 15.5667 9.42356 15.949C9.8092 16.3429 10.4433 16.3429 10.8289 15.949L15.965 10.703C16.345 10.3148 16.345 9.68553 15.965 9.29737L10.8289 4.05105C10.4433 3.65715 9.80921 3.65713 9.42356 4.05101C9.04928 4.43328 9.04926 5.04462 9.42352 5.42691L13.0847 9.16666L4.58333 9.16666C4.1231 9.16666 3.75 9.53976 3.75 10C3.75 10.4602 4.1231 10.8333 4.58333 10.8333L13.085 10.8333Z">
+                                    </path>
+                                </g>
+                            </svg>
+                            <!-- Flecha reemplazada -->
+                            <svg class="arrow replaced" width="15px" height="15px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <g fill="inherit">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M13.085 10.8333L9.42356 14.5731C9.04929 14.9553 9.04929 15.5667 9.42356 15.949C9.8092 16.3429 10.4433 16.3429 10.8289 15.949L15.965 10.703C16.345 10.3148 16.345 9.68553 15.965 9.29737L10.8289 4.05105C10.4433 3.65715 9.80921 3.65713 9.42356 4.05101C9.04928 4.43328 9.04926 5.04462 9.42352 5.42691L13.0847 9.16666L4.58333 9.16666C4.1231 9.16666 3.75 9.53976 3.75 10C3.75 10.4602 4.1231 10.8333 4.58333 10.8333L13.085 10.8333Z">
+                                    </path>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+        
+        
+        
 
         <!-- Video -->
          <br><br>
