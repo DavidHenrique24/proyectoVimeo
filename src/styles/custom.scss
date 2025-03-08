@@ -623,25 +623,22 @@ button {
 }
 
 
-
 /* Sección Slider */
+
 .slider-wrapper {
   position: relative;
   overflow: hidden;
   width: 100%; 
-  max-width: 1400px;
+  max-width: 1100px;
   margin: auto;
   padding: 10px;
-  display: flex; 
-  justify-content: center; 
-  align-items: center;
 }
 
 .slider {
   display: flex;
-  gap: 100px; 
-  animation: slide 30s linear infinite;
-  justify-content: center; 
+  gap: 150px; 
+  animation: slide 15s linear infinite;
+  justify-content: start; 
 }
 
 .logoImg {
@@ -655,14 +652,14 @@ button {
   content: ""; /* ::before y ::after crean elementos adicionales dentro de .slider-wrapper, pero sin contenido visible */
   position: absolute;
   top: 0;
-  width: 400px;
+  width: 200px;
   height: 100%;
   z-index: 2;
 }
 
 .slider-wrapper::before {
   left: 0;
-  background: linear-gradient(to right, rgba(255, 255, 255, 1), transparent); //Para hacer el degradado
+  background: linear-gradient(to right, rgba(255, 255, 255, 1), transparent); /* Para hacer el degradado */
 }
 
 .slider-wrapper::after {
@@ -672,10 +669,13 @@ button {
 
 /* Animación de desplazamiento */
 @keyframes slide {
-  from {
-      transform: translateX(0);
+  0% {
+    transform: translateX(100%); /* Empieza desde la derecha */
   }
-  to {
-      transform: translateX(-50%);
+  50% {
+    transform: translateX(0); /* Mueve las imágenes completamente hacia la izquierda */
+  }
+  100% {
+    transform: translateX(-160%); /* Mueve las imágenes completamente fuera de la vista a la izquierda */
   }
 }
