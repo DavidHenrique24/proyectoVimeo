@@ -593,3 +593,26 @@ button {
     width: 100%;
   }
 }
+
+//Video
+.container-laptop {
+  width: 1200px;
+  height: auto;
+  margin: auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#mi-video {
+  position: absolute;
+  z-index: 4;
+  margin: auto;
+  top:-150px;
+  bottom: 0;
+}
+
+.laptop {
+  width: 100%;
+}
