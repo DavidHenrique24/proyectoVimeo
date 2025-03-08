@@ -569,3 +569,27 @@ button {
   background-color: rgb(0, 140, 200);
   transition: 0.2s;
 }
+
+
+/* Elementos animados que aparecen al hacer scroll */
+.animado {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Clase aplicada cuando el elemento entra en pantalla */
+.animado.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Definición de la animación para la barra de progreso */
+@keyframes progressAnimation {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}

@@ -182,9 +182,9 @@
     <!-- Cuerpo -->
     <main class="text-center">
 
-        <h1 class="titulo ">Haga más con sus videos</h1>
+        <h1 class="titulo animado ">Haga más con sus videos</h1>
         <br>
-        <h5 class="text">Conozca la plataforma de video completa que puede transformar su manera de hacer negocios.</h5>
+        <h5 class="text animado">Conozca la plataforma de video completa que puede transformar su manera de hacer negocios.</h5>
         <br>
         <!-- Animacion de botones -->
         <div class="d-flex justify-content-center w-100 space-between">
@@ -221,7 +221,7 @@
 
         <!-- Video -->
          <br><br>
-        <div class="d-flex justify-content-center mt-4">
+        <div class="d-flex justify-content-center mt-4 animado">
             <iframe width="600" height="400" src="https://www.youtube.com/embed/S1GS7z581Yc?playlist=S1GS7z581Yc&loop=1"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -887,6 +887,32 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script type="module" src="/main.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const elementos = document.querySelectorAll(".animado");
+
+            const opciones = {
+                root: null, // Observa respecto al viewport
+                rootMargin: "0px",
+                threshold: 0.1, // El 10% del elemento visible
+            };
+
+            const callback = (entradas, observador) => {
+                entradas.forEach((entrada) => {
+                    if (entrada.isIntersecting) {
+                        entrada.target.classList.add("visible");
+                        observador.unobserve(entrada.target); // Deja de observar el elemento
+                    }
+                });
+            };
+
+            const observer = new IntersectionObserver(callback, opciones);
+
+            elementos.forEach((elemento) => {
+                observer.observe(elemento);
+            });
+        });
+    </script>
 </body>
 
 </html>
