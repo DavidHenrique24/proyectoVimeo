@@ -621,3 +621,61 @@ button {
   background-color: rgb(0, 208, 255);
   transition: 0.2s;
 }
+
+
+
+/* Sección Slider */
+.slider-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%; 
+  max-width: 1400px;
+  margin: auto;
+  padding: 10px;
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+}
+
+.slider {
+  display: flex;
+  gap: 100px; 
+  animation: slide 30s linear infinite;
+  justify-content: center; 
+}
+
+.logoImg {
+  width: 250px;
+  height: auto;
+}
+
+/* Degradado translúcido en los extremos */
+.slider-wrapper::before,
+.slider-wrapper::after {
+  content: ""; /* ::before y ::after crean elementos adicionales dentro de .slider-wrapper, pero sin contenido visible */
+  position: absolute;
+  top: 0;
+  width: 400px;
+  height: 100%;
+  z-index: 2;
+}
+
+.slider-wrapper::before {
+  left: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 1), transparent); //Para hacer el degradado
+}
+
+.slider-wrapper::after {
+  right: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 1), transparent);
+}
+
+/* Animación de desplazamiento */
+@keyframes slide {
+  from {
+      transform: translateX(0);
+  }
+  to {
+      transform: translateX(-50%);
+  }
+}
