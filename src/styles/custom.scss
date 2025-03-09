@@ -171,47 +171,6 @@ body {
   padding-bottom: 50px;
 }
 
-svg {
-  width: 20px; /* Iconos más grandes */
-  height: 20px;
-}
-
-footer ul {
-  list-style: none; 
-  padding: 0;
-}
-
-footer ul li a {
-  text-decoration: none;
-  color: white; 
-}
-
-footer ul li a:hover {
-  color: rgba(23,213,255);
-}
-
-footer ul {
-  list-style: none; 
-  padding: 0;
-}
-
-footer ul li {
-  font-size: 17px; 
-  font-weight: 500;
-  color: #979797;
-}
-
-footer ul li a {
-  text-decoration: none; 
-  color: rgb(202, 202, 202);
-  display: block; 
-  padding: 2px 0; 
-}
-
-footer ul li a:hover {
-  color:rgba(23,213,255); 
-}
-
 .negroColor {
   background-color: rgba(10,13,18,255)
 }
@@ -704,4 +663,49 @@ button {
   display: flex;
   flex-wrap: wrap; /* Permite que las columnas se ajusten sin apilarse */
   margin-top:130px;
+}
+
+//Seccion Footer 6
+svg {
+  width: 20px; /* Iconos más grandes */
+  height: 20px;
+}
+svg:hover {
+  color: rgba(23,213,255); 
+}
+
+footer ul {
+  list-style: none; 
+  padding: 0;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: white; 
+}
+
+footer ul li a:hover {
+  color: rgba(23,213,255);
+}
+
+footer ul {
+  list-style: none; 
+  padding: 0;
+}
+
+footer ul li {
+  font-size: 17px; 
+  font-weight: 500;
+  color: #979797;
+}
+
+footer ul li a {
+  text-decoration: none; 
+  color: rgb(202, 202, 202);
+  display: block; 
+  padding: 2px 0; 
+}
+
+footer ul li a:hover {
+  color:rgba(23,213,255); 
 }
