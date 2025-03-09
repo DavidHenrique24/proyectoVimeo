@@ -647,21 +647,24 @@ button {
   margin-top: 2rem;
   flex-wrap: wrap;
   overflow: hidden; /* Previene desbordamientos */
+  position: relative;
 }
 
 .columna {
   flex: 1; /* Mantiene las columnas proporcionales */
-  transition: all 0.5s ease;
-  min-width: 300px;
-  max-width: 100%; /* Limita el ancho máximo */
+  transition: all 0.5s ease; /* Transición de todos los cambios */
+  min-width: 100px;
+  max-width: 50%; /* Limita el ancho máximo */
   overflow: hidden; /* Evita que se expandan más allá del contenedor */
+  position: relative; /* Posición normal */
 }
 
 .columna:hover {
-  flex: 2.5; /* Reduce la expansión para evitar desbordamientos */
+  flex: 2.5; /* Expande la columna al pasar el mouse */
   transform: scale(1.05); /* Pequeño aumento en tamaño */
-  z-index: 10;
+  z-index: 10; /* Asegura que la columna con el hover esté sobre las demás */
 }
+
 
 
 //Seccion Footer 6
