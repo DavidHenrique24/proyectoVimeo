@@ -688,15 +688,20 @@ button {
 }
 
 .columna {
-  flex: 1;
+  flex: 2; /* Incrementa el valor de flex para más espacio */
   transition: all 0.5s ease; /* Transición suave de los cambios */
-  min-width: 280px;  /* Asegura que las columnas no sean demasiado pequeñas */
-  margin-bottom: 10px;  /* Separación entre las columnas */
+  min-width: 350px;  /* Asegura que las columnas no sean demasiado pequeñas */
+  
 }
 
 .columna:hover {
-  flex: 1.5;  /* Amplía la columna solo en el ancho */
+  flex: 5;  /* Amplía la columna solo en el ancho */
   transform: scaleX(1.1);  /* Expande solo en ancho sin afectar la altura */
   z-index: 10;  /* Mantiene la columna expandida al frente */
 }
 
+.trabajoFlujo{
+  display: flex;
+  flex-wrap: wrap; /* Permite que las columnas se ajusten sin apilarse */
+  margin-top:130px;
+}
